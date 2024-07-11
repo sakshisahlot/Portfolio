@@ -234,3 +234,41 @@ footer {
   padding: 10px 0;
 }
 
+.education{
+  display: flex;
+  align-items: center;
+}
+.education-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 140px;
+  width: 550px;
+  border-radius: 20px;
+  margin: 1.5rem;
+  box-shadow: 0 4px 8px #FF7372;
+}
+
+.eduction-box-animation{
+  height: 120px;
+  width: 120px;
+}
+.education-box h6{
+  color: #FF7372;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.mt-4{
+  margin-top: 2rem;
+}
+
+.education-animation{
+    height: 400px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+
