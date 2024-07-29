@@ -12,6 +12,14 @@
       crossorigin="anonymous"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
+"></script>
+    <script>
+      (function () {
+          emailjs.init("8v43SNiiAidWmvgW7");
+      })();
+  </script>
   </head>
 
   <body>
@@ -269,7 +277,7 @@
                     class="skills-icon-size"
                   />
                 </div>
-                <h3>Bootstrap</h3>
+                <h3>C</h3>
               </div>
             </div>
           </div>
@@ -526,6 +534,60 @@
       <section id="ContactMe">
         <div class="container text-center">
           <h1 class="fs-48">Contact Me</h1>
+          <h5 class="color-pink fs-20">Let's keep in touch</h5>
+          <div class="contact mt-4">
+              <div class="form">
+                <div class="contact-info">   
+                  <h2>Get in touch</h2>    
+                  <div class="connect-icons mt-2">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-linkedin fa-xl m-2"
+                        style="color: #ff7372"
+                      ></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-github fa-xl m-2"
+                        style="color: #ff7372"
+                      ></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa-solid fa-envelope fa-xl m-2"
+                        style="color: #ff7372"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="connect-icons mt-4">
+                    <p><i class="fa-solid fa-location-dot mr-2"  style="color: #ff7372"></i>Ghaziabad, Uttar Pradesh, India</p>
+                    <p><i class="fa-solid fa-envelope mr-2" style="color: #ff7372"></i>sakshi.sahlots@gmail.com</p>
+                  </div>
+                </div>
+        
+                <div class="contact-form">
+                  <form autocomplete="off" id="contactForm">
+                    <div class="input-container">
+                      <input type="text" id="name" name="name" class="input" required/>
+                      <label for="">Name</label>
+                      <span>Name</span>
+                    </div>
+                    <div class="input-container">
+                      <input type="email" id="email" name="email" class="input" required/>
+                      <label for="">Email</label>
+                      <span>Email</span>
+                    </div>
+                    <div class="input-container textarea">
+                      <textarea name="message" id="message" class="input" required></textarea>
+                      <label for="">Message</label>
+                      <span>Message</span>
+                    </div>
+                    <input type="submit" class="btn" />
+                  </form>
+                  <div id="responseMessage"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <div class="container">
@@ -534,8 +596,9 @@
     </main>
 
     <footer>
-      <div class="container">
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <div class="container fs-20">
+        <p>Made with <i class="fa-regular fa-heart" style="color: white;"></i> by Sakshi</p>
+        <!-- <p>&copy; 2024 My Portfolio. All rights reserved.</p> -->
       </div>
     </footer>
 
