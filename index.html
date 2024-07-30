@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -17,44 +18,63 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
 "></script>
     <script>
       (function () {
-          emailjs.init("8v43SNiiAidWmvgW7");
+        emailjs.init("8v43SNiiAidWmvgW7");
       })();
-  </script>
+    </script>
   </head>
 
   <body>
     <header>
-      <div class="navbar container">
-        <div class="navbar-logo">
-          <a href="#"
-            ><img src="img/name-logo.png" alt="logo" class="logo-img"
-          /></a>
+      <nav class="navbar navbar-expand-lg navbar container pt-0">
+        <div class="container-fluid">
+          <div class="navbar-logo">
+            <a href="#"
+              ><img src="img/name-logo.png" alt="logo" class="logo-img"
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ms-5 ps-5"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 ps-4">
+              <li class="navbar-links nav-item">
+                <a class="nav-link" href="#intro"
+                  ><h3>Home</h3></a
+                >
+              </li>
+              <li class="navbar-links nav-item">
+                <a class="nav-link" href="#about"><h3>About</h3></a>
+              </li>
+              <li class="navbar-links nav-item">
+                <a class="nav-link" href="#skills"><h3>Skills</h3></a>
+              </li>
+              <li class="navbar-links nav-item">
+                <a class="nav-link" href="#Education"><h3>Education</h3></a>
+              </li>
+              <li class="navbar-links nav-item">
+                <a class="nav-link" href="#Experience"><h3>Experience</h3></a>
+              </li>
+              <li class="navbar-links nav-item">
+                <a class="nav-link" href="#Projects"><h3>Projects</h3></a>
+              </li>
+              <li class="navbar-links nav-item">
+                <a class="nav-link" href="#ContactMe"><h3>Contact</h3></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="navbar-links">
-          <a href="#intro">
-            <h3>Home</h3>
-          </a>
-          <a href="#about">
-            <h3>About</h3>
-          </a>
-          <a href="#skills">
-            <h3>Skills</h3>
-          </a>
-          <a href="#Education">
-            <h3>Education</h3>
-          </a>
-          <a href="#Experience">
-            <h3>Experience</h3>
-          </a>
-
-          <a href="#Projects">
-            <h3>Projects</h3>
-          </a>
-          <a href="#ContactMe">
-            <h3>Contact</h3>
-          </a>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <main>
@@ -63,20 +83,20 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
           <div class="face-img">
             <img src="img/face-img.jpg" class="face-img-size" />
           </div>
-          <h1>
+          <h1 class="fs-1-5 mb-3">
             Hello, I'm Sakshi
             <img src="img/hand.png" alt="waving hand" class="hand-img" />
           </h1>
-          <p class="fs-48 mt-2">
+          <p class="fs-48 mt-3">
             Transforming ideas <br />
             into interactive digital masterpieces.
           </p>
-          <p class="mt-2">
+          <p class="mt-3">
             A Frontend Developer who is passionate about creating responsive and
             user-friendly interfaces <br />
             that elevate user experiences.
           </p>
-          <div class="connect-icons mt-2">
+          <div class="connect-icons mt-3">
             <a href="https://www.linkedin.com/in/sakshisahlot/" target="_blank"
               ><i
                 class="fa-brands fa-linkedin fa-xl m-2"
@@ -89,7 +109,9 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
                 style="color: #ff7372"
               ></i
             ></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sakshi.sahlots@gmail.com" target="_blank"
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sakshi.sahlots@gmail.com"
+              target="_blank"
               ><i
                 class="fa-solid fa-envelope fa-xl m-2"
                 style="color: #ff7372"
@@ -105,8 +127,8 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
         <div class="container text-center">
           <h1 class="fs-48">About Me</h1>
           <h5 class="color-pink fs-20">Why hire me?</h5>
-          <div class="about">
-            <div class="about-text fs-20">
+          <div class="about row">
+            <div class="about-text fs-20 col-lg-6 col-md-12 col-sm-12">
               Hello, and welcome to my corner of the internet. <br />I'm Sakshi,
               and I'm passionate about creating immersive digital experiences.
               With a robust skill set spanning frontend technologiew and a keen
@@ -117,14 +139,14 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
               expectations.
               <div class="about-button">
                 <button type="submit" class="button-about bg-blue fs-20 fw-700">
-                  Hire Me
+                  <a href="#ContactMe">Hire Me</a>
                 </button>
                 <button type="submit" class="button-about bg-pink fs-20 fw-700">
-                  Resume
+                  <a href="./data/resume.pdf" download="resume.pdf" >Resume</a>
                 </button>
               </div>
             </div>
-            <div class="about-img">
+            <div class="about-img col-lg-6 col-md-12 col-sm-12">
               <img
                 src="img/about-img.png"
                 alt="about-img"
@@ -186,6 +208,16 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
               <div class="carousel-card">
                 <div class="card-content">
                   <img
+                    src="img/react-icon.png"
+                    alt="react icon"
+                    class="skills-icon-size"
+                  />
+                </div>
+                <h3>React</h3>
+              </div>
+              <div class="carousel-card">
+                <div class="card-content">
+                  <img
                     src="img/angular-icon.jpg"
                     alt="angular icon"
                     class="skills-icon-size"
@@ -197,11 +229,21 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
                 <div class="card-content">
                   <img
                     src="img/nodejs-icon.png"
-                    alt="github icon"
+                    alt="nodejs icon"
                     class="skills-icon-size"
                   />
                 </div>
                 <h3>Node JS</h3>
+              </div>
+              <div class="carousel-card">
+                <div class="card-content">
+                  <img
+                    src="img/express-icon.png"
+                    alt="express icon"
+                    class="skills-icon-size"
+                  />
+                </div>
+                <h3>Express</h3>
               </div>
               <div class="carousel-card">
                 <div class="card-content">
@@ -293,8 +335,8 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
       <section id="Education">
         <div class="container text-center">
           <h1 class="fs-48">Education</h1>
-          <div class="education mt-4">
-            <div class="education-details">
+          <div class="education mt-4 row">
+            <div class="education-details col-lg-6 col-md-12 col-sm-12">
               <div class="education-box">
                 <img
                   src="img/educationBoxAnimation.gif"
@@ -320,7 +362,10 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
                 </div>
               </div>
             </div>
-            <div class="education-animation" id="educationLottie"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="education-animation" id="educationLottie"></div>
+            </div>
+            
             <!-- <div class="education-box">
             <img src="img/educationBoxAnimation.gif" alt="education box animation" class="eduction-box-animation">
             <div class="education-details text-left">
@@ -346,9 +391,11 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
       <section id="Experience">
         <div class="container text-center">
           <h1 class="fs-48">Experience</h1>
-          <div class="experience mt-4">
-            <div class="experience-animation" id="experienceLottie"></div>
-            <div class="experience-details">
+          <div class="experience mt-4 row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="experience-animation" id="experienceLottie"></div>
+            </div>
+            <div class="experience-details col-lg-6 col-md-12 col-sm-12">
               <div class="experience-box">
                 <img
                   src="img/experienceBoxAnimation.gif"
@@ -476,7 +523,7 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
                 </div>
               </div>
             </div>
-            <div class="project-box show">
+            <div class="project-box hidden">
               <h2>Corona Portal</h2>
               <video class="video video-size" autoplay loop muted>
                 <source src="img/coronaAnimation.mp4" type="video/mp4" />
@@ -493,7 +540,7 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
                 </div>
               </div>
             </div>
-            <div class="project-box show">
+            <div class="project-box hidden">
               <h3>Fracture Detection App</h3>
               <video class="video video-size" autoplay loop muted>
                 <source src="img/fractureAnimation.mp4" type="video/mp4" />
@@ -509,7 +556,7 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
                 </div>
               </div>
             </div>
-            <div class="project-box show">
+            <div class="project-box hidden">
               <h2>Portfolio</h2>
               <video class="video video-size" autoplay loop muted>
                 <source src="img/portfolioAnimation.mp4" type="video/mp4" />
@@ -540,55 +587,84 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
           <h1 class="fs-48">Contact Me</h1>
           <h5 class="color-pink fs-20">Let's keep in touch</h5>
           <div class="contact mt-4">
-              <div class="form">
-                <div class="contact-info">   
-                  <h2>Get in touch</h2>    
-                  <div class="connect-icons mt-2">
-                    <a href="#"
-                      ><i
-                        class="fa-brands fa-linkedin fa-xl m-2"
-                        style="color: #ff7372"
-                      ></i
-                    ></a>
-                    <a href="#"
-                      ><i
-                        class="fa-brands fa-github fa-xl m-2"
-                        style="color: #ff7372"
-                      ></i
-                    ></a>
-                    <a href="#"
-                      ><i
-                        class="fa-solid fa-envelope fa-xl m-2"
-                        style="color: #ff7372"
-                      ></i
-                    ></a>
-                  </div>
-                  <div class="connect-icons mt-4">
-                    <p><i class="fa-solid fa-location-dot mr-2"  style="color: #ff7372"></i>Ghaziabad, Uttar Pradesh, India</p>
-                    <p><i class="fa-solid fa-envelope mr-2" style="color: #ff7372"></i>sakshi.sahlots@gmail.com</p>
-                  </div>
+            <div class="form">
+              <div class="contact-info">
+                <h2>Get in touch</h2>
+                <div class="connect-icons mt-2">
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-linkedin fa-xl m-2"
+                      style="color: #ff7372"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-github fa-xl m-2"
+                      style="color: #ff7372"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fa-solid fa-envelope fa-xl m-2"
+                      style="color: #ff7372"
+                    ></i
+                  ></a>
                 </div>
-        
-                <div class="contact-form">
-                  <form autocomplete="off" id="contactForm">
-                    <div class="input-container">
-                      <input type="text" id="name" name="name" class="input" required/>
-                      <label for="">Name</label>
-                      <span>Name</span>
-                    </div>
-                    <div class="input-container">
-                      <input type="email" id="email" name="email" class="input" required/>
-                      <label for="">Email</label>
-                      <span>Email</span>
-                    </div>
-                    <div class="input-container textarea">
-                      <textarea name="message" id="message" class="input" required></textarea>
-                      <label for="">Message</label>
-                      <span>Message</span>
-                    </div>
-                    <input type="submit" class="btn" />
-                  </form>
-                  <div id="responseMessage"></div>
+                <div class="connect-icons mt-4">
+                  <p class="center">
+                    <i
+                      class="fa-solid fa-location-dot mr-2"
+                      style="color: #ff7372"
+                    ></i
+                    >Ghaziabad, Uttar Pradesh, India
+                  </p>
+                  <p class="center">
+                    <i
+                      class="fa-solid fa-envelope mr-2"
+                      style="color: #ff7372"
+                    ></i
+                    >sakshi.sahlots@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-form">
+                <form autocomplete="off" id="contactForm">
+                  <div class="input-container">
+                    <input
+                      autocomplete="user"
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="input"
+                    />
+                    <label for="name">Name</label>
+                    <span>Name</span>
+                  </div>
+                  <div class="input-container">
+                    <input
+                    autocomplete="email@email.com"
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="input"
+                    />
+                    <label for="email">Email</label>
+                    <span>Email</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea
+                    autocomplete="message"
+                      name="message"
+                      id="message"
+                      class="input"
+                    ></textarea>
+                    <label for="message">Message</label>
+                    <span>Message</span>
+                  </div>
+                  <input type="submit" class="btn" />
+                </form>
+                <div id="responseMessage"></div>
               </div>
             </div>
           </div>
@@ -601,11 +677,15 @@ https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js
 
     <footer>
       <div class="container fs-20">
-        <p>Made with <i class="fa-regular fa-heart" style="color: white;"></i> by Sakshi</p>
+        <p>
+          Made with <i class="fa-regular fa-heart" style="color: white"></i> by
+          Sakshi
+        </p>
         <!-- <p>&copy; 2024 My Portfolio. All rights reserved.</p> -->
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

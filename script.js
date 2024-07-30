@@ -16,13 +16,13 @@ const experienceAnimation = lottie.loadAnimation({
 });
 
 const showButton = document.querySelector("#showButton");
-const showprojects = document.querySelectorAll(".show");
+const showprojects = document.querySelectorAll(".hidden");
 
 showButton.addEventListener("click", () => {
     showprojects.forEach((project) => {
-        project.classList.toggle("show");
+        project.classList.toggle("hidden");
     });
-    const isHidden = Array.from(showprojects).every((project) => project.classList.contains("show"));
+    const isHidden = Array.from(showprojects).every((project) => project.classList.contains("hidden"));
     showButton.textContent = isHidden ? 'Load More Projects' : 'Hide Projects';
 });
 
